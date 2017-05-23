@@ -1,0 +1,31 @@
+-cd vao folder gốc 
+
+- clone cái kho chứa này về máy của mình bằng lệnh :git clone diachi_url
+vd : git clone https://github.com/chickykilar/HocGit
+
+-Tạo ra một file tên là README.md:
+echo "# Huong dan Git co ban" > README.md
+
+- lệnh git add để đưa file này vào Staging Area:
+$ git add README.md
+Nếu lỗi :
+fatal: Not a git repository (or any parent up to mount point /media/toby/DATA)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+----> chạy lênh : git init 
+Sau đó add lại : git add README.md
+
+-Commit (nhưng vẫn chưa lên server):
+$ git commit -m "First commit on Github"
+Tuy nhiên sau khi commit xong, tập tin đã được commit sẽ vẫn không thể xuất hiện
+trong kho chứa trên Github mà bạn phải làm thêm một việc nữa
+đó là dùng lệnh git push để đẩy các tập tin đã được commit lên Github.
+Lưu ý rằng bạn sẽ cần nhập tài khoản và mật khẩu Github.
+
+-git remote add origin https://github.com/chickykilar/HocGit.git
+
+-đẩy các tập tin đã được commit lên Github:
+git push origin master
+
+origin nghĩa là tên remote (xem ở bài sau) và master là tên branch
+
+
