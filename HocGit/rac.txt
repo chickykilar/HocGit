@@ -28,4 +28,7 @@ git push origin master
 
 origin nghĩa là tên remote (xem ở bài sau) và master là tên branch
 
+-----------------------------------
+Chú ý:
+Commit rồi mới push lên server đc 
 
